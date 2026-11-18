@@ -166,5 +166,6 @@ displayProjects(projects);
 const printBtn = document.getElementById("printBtn");
 
 printBtn.addEventListener("click", function () {
+    displayProjects(projects);
     window.print();
 });
