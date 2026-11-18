@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="profile-header">
+
+        <!-- Dark Mode and Print Buttons -->
+        <div class="header-actions">
+            <button id="themeBtn"
+                    title="Dark Mode"
+                    aria-label="Switch to dark mode">☾</button>
+
+            <button id="printBtn"
+                    title="Print / Save as PDF"
+                    aria-label="Print or save as PDF">⎙</button>
+        </div>
+
+        <h1>Reem Alzahrani</h1>
+        <p class="job-title">Information Technology Student</p>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <main class="cv-container">
+
+        <!-- About Me -->
+        <section id="about" class="cv-section">
+            <h2>About Me</h2>
+
+            <p>
+                Information Technology student interested in
+                Data Science, Artificial Intelligence,
+                and Software Development.
+                I enjoy learning new technologies and
+                building practical solutions.
+            </p>
+
+            <p id="moreAbout" hidden>
+                I am passionate about applying my technical
+                skills to real-world problems.
+                I enjoy working on programming, data analysis,
+                and web development projects.
+            </p>
+
+            <button id="aboutBtn"
+                    aria-expanded="false">
+                Show More
+            </button>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="cv-section">
+            <h2>Education</h2>
+
+            <article class="education-item">
+                <h3>King Abdulaziz University</h3>
+                <p>Bachelor of Information Technology</p>
+                <p>Expected Graduation: 2027</p>
+            </article>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="cv-section">
+            <h2>Skills</h2>
+
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>SQL</li>
+                <li>Java</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="cv-section">
+            <h2>Projects</h2>
+
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active"
+                        data-category="All"
+                        aria-pressed="true">
+                    All
+                </button>
+
+                <button class="filter-btn"
+                        data-category="Web"
+                        aria-pressed="false">
+                    Web
+                </button>
+
+                <button class="filter-btn"
+                        data-category="Programming"
+                        aria-pressed="false">
+                    Programming
+                </button>
+            </div>
+
+            <!-- JavaScript Generates Project Cards -->
+            <div id="projectContainer"
+                 class="project-container">
+            </div>
+
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="cv-section">
+            <h2>Contact</h2>
+
+            <p>
+                Email:
+                <a href="mailto:rzahrani0056@stu.kau.edu.sa">
+                    rzahrani0056@stu.kau.edu.sa
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/reemsdiv"
+                   target="_blank">
+                    github.com/reemsdiv
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/reem-alzahrani-132059330"
+                   target="_blank">
+                    LinkedIn Profile
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Reem Alzahrani</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
